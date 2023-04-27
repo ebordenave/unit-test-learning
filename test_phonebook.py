@@ -35,6 +35,12 @@ class PhoneBookTest(unittest.TestCase):
         self.phonebook.add("Steve", "12345")
         self.phonebook.add("Sue", "123")
         self.assertFalse(self.phonebook.is_consistent())
+
+    def test_phonebook_adds_names_and_numbers(self):
+        self.phonebook.add("Sue", "12345")
+        self.assertIn("Sue", self.phonebook.get_names())
+        self.assertIn("12345", self.phonebook.get_phone_number())
+
 # arrange
 # act
 # assert

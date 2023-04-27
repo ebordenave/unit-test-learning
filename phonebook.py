@@ -17,3 +17,9 @@ class PhoneBook:
                 if phone_number1.startswith(phone_number2):
                     return False
         return True
+
+    def get_names(self):
+        return True
+
+    def get_phone_number(self):
+        return True
